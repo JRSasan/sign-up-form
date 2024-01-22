@@ -63,3 +63,77 @@ main {
     height: 15vh;
 }
 
+/* Right side */
+
+.form-content {
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F3F4;
+}
+
+.left-gap {
+    padding-left: 2vw;
+}
+
+.form-heading {
+    padding-top: 130px;
+    padding-bottom: 50px;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.form-heading p:last-of-type {
+    margin-top: 20px;
+}
+
+.form-inputs {
+    background-color: white;
+    margin-bottom: 30px;
+    box-shadow: 0px 15px 8px -18px #111
+}
+
+.form-inputs form {
+    max-width: 50vw;
+}
+
+.form-inputs fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    border: 0;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+legend {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.data-field {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+
+.data-field input {
+    padding: 5px;
+    margin-right: 50px;
+    border: 1px solid #E4E5E6;
+    border-radius: 3px;
+}
+
+.data-field label {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+button {
+    width: 20%;
+    margin-left: 2vw;
+    padding: 10px;
+}
+
+
