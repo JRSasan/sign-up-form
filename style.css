@@ -118,22 +118,37 @@ legend {
     width: 35%;
 }
 
-.data-field input {
+input {
     padding: 7px;
     margin-right: 50px;
     border: 1px solid #E5E7EB;
     border-radius: 3px;
 }
 
-.data-field input:focus {
+input:focus {
     outline: none !important;
-    border:1px solid rgb(0, 89, 255);
-    box-shadow: 0 0 3px #719ECE;
+    border: 1px solid rgb(0, 89, 255);
+    
 }
 
-.data-field label {
+label {
     font-size: 0.8rem;
     font-weight: 500;
+}
+
+.error {
+    border: 1px solid red;
+    background-color: rgb(246, 241, 241);
+}
+
+.error:focus {
+    border: 1px solid red;
+}
+
+.wrong-password {
+    font-size: 0.6rem;
+    font-weight: 500;
+    color: red;
 }
 
 button {

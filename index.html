@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Sign-up Form</title>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <main>
@@ -44,11 +45,12 @@
                         </div>
                         <div class="data-field">
                             <label for="password">PASSWORD</label>
-                            <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                            <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" onkeyup="validatePassword()">
+                            <p class="wrong-password" hidden>*Passwords do not match</p>
                         </div>
                         <div class="data-field">
                             <label for="confirm-password">CONFIRM PASSWORD</label>
-                            <input type="password" id="confirm-password" name="confirm-password">
+                            <input type="password" id="confirm-password" name="confirm-password" onkeyup="validatePassword()" required>
                         </div>
                     </fieldset>
                 </form>
